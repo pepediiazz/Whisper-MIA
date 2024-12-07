@@ -1,0 +1,4 @@
+flask
+flask-cors
+whisper
+ffmpeg-python
