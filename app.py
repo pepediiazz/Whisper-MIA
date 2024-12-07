@@ -7,7 +7,7 @@ from threading import Thread
 # Inicializar Flask y cargar el modelo Whisper
 app = Flask(__name__)
 CORS(app)  # Permite peticiones desde cualquier origen
-model = whisper.load_model("small")  # Usa "tiny", "small", etc., si prefieres otros tamaños
+model = whisper.load_model("base")  # Usa "tiny", "small", etc., si prefieres otros tamaños
 
 @app.route("/transcribe", methods=["POST"])
 def transcribe():
